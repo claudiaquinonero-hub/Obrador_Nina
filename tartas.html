@@ -15,6 +15,7 @@
      <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
      
 </head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body class="">
     <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l dark:bg-neutral-900 dark:text-white">
         <nav class="max-w-5x1  mx-auto px-6 py-1 flex flex-row p-8 justify-between">
@@ -55,7 +56,7 @@
         <section class="px-6 pt-4 pb-8 bg-[var(--color-secundario)] rounded-t-3xl ">
             <div class="max-w-5xl mx-auto">
 
-                <h1 class="text-4xl md:text-6xl lg:text-8xl mb-8 mt-8">Realiza tu encargo</h1>
+                <h1 data-aos="fade-up" class="text-4xl md:text-6xl lg:text-8xl mb-8 mt-8">Realiza tu encargo</h1>
                 <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">Desde hace 10 años hemos implementado un nuevo servicio en el obrador, la personalización de tartas por encargo.</h2>
                 <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">Realizamos tartas con precios base y precios personalizados según las necesidades del cliente.</h2>
                 <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">El plazo medio de entrega es de entre 3 y 5 días hábiles, pero puede variar según el encargo o la disponibilidad.</h2>
@@ -109,6 +110,15 @@
             boton.textContent = "Modo claro";
         } else {
         }
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
     });
 </script>
 </body>
