@@ -3,50 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Aguja y el Tornillo · Ferretería y Mercería</title>
+    <title>El Obrador De Nina</title>
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-     <style type="text/tailwindcss">
-        @theme static {
-            --color-mostaza: #00ff43;
-        }
-     </style>
      <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
      <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
      
 </head>
 <body class="">
-    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-xl">
-        <nav class="max-w-5x1  mx-auto px-6 py-8 flex flex-row p-8 justify-between">
-            <a href="#" class="">La Aguja y el Tornillo</a>
-            <ul class="flex flex-row gap-4">
-                <li><a href="#productos" class="">Productos</a></li>
-                <li><a href="#horario" class="">Horario</a></li>
-                <li><a href="#contacto" class="">Contacto</a></li>
-            </ul>
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l">
+        <nav class="max-w-5x1  mx-auto px-6 py-1 flex flex-row p-8 justify-between">
+            <a href="#" class="">El Obrador de Nina</a>
+
+            <details class="relative md:hidden">
+
+            <summary class="list-none cursor-pointer text-3xl">
+                ☰
+            </summary>
+
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50">
+
+                <ul class="flex flex-col gap-4">
+                    <li><a href="#inicio">Historia</a></li>
+                    <li><a href="#obrador">Horarios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#contacto">Tartas</a></li>
+                </ul>
+
+            </div>
+
+        </details>
+
+        <ul class="hidden md:flex flex-row gap-6">
+            <li><a href="#productos">Historia</a></li>
+            <li><a href="#horario">Horarios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#contacto">Tartas</a></li>
         </nav>
     </header>
 
     <main>
-        <section class="bg-amber-100 border-b-4 border-green-900">
-            <div class="max-w-5x1  mx-auto text-center p-15">
-                <p class="">Desde 1962 en el barrio</p>
-                <h1 class="text-4xl text-green-900 mt-3 font-serif font-bold md:text-6xl">Si no lo tenemos, se lo pedimos</h1>
-                <p class="text-black p-6 max-w-2xl mx-auto text-lg">
-                    Tornillos sueltos, botones de repuesto, cremalleras, bombillas y copias de llaves.
-                    Lo de toda la vida, con la atención de siempre.
-                </p>
-                <a href="#horario" class="botoncito inline-block mt-8 px-6 py-3 bg-red-600 text-amber-50 rounded-full font-bold hover:bg-red-900">Ver horario</a>
-            </div>
-        </section>
 
-        <section id="productos" class="max-w-5xl mx-auto px-6 py-20">
-            <h2 class="font-serif text-3xl text-green-900 text-center font-bold mb-10">Qué encontrará en la tienda</h2>
+
+        <section id="productos" class="max-w-5xl mx-auto px-6 py-20 bg-[var(--color-secundario)]">
+            <h1 class="text-5xl text-center font-bold mb-10">Novedades <span class="text-sm">POR TIEMPO LIMITADIO</span></h1>
 
             <div class="flex flex-col md:flex-row gap-6">
-                <article class="p-6 rounded-xl shadow-md text-black bg-white border-t-4 border-green-900">
+                <article class="p-6 rounded-xl shadow-md text-black  border-t-4 border-green-900 bg-[var(--color-principal)]">
                     <h3 class="font-bold">Ferretería</h3>
                     <p class="text-left">Todo para los arreglos de casa, también por unidades.</p>
                     <ul class="text-left">
@@ -56,7 +61,7 @@
                     </ul>
                 </article>
 
-                <article class="p-6 rounded-xl shadow-md text-black bg-white border-t-4 border-red-600">
+                <article class="p-6 rounded-xl shadow-md text-black bg-[var(--color-principal)] border-t-4 border-red-600">
                     <h3 class="font-bold">Mercería</h3>
                     <p class="text-left">Para coser, remendar y dar una segunda vida a la ropa.</p>
                     <ul class="text-left">
@@ -66,7 +71,7 @@
                     </ul>
                 </article>
 
-                <article class="p-6 rounded-xl shadow-md text-black bg-white border-t-4 border-yellow-500">
+                <article class="p-6 rounded-xl shadow-md text-black bg-[var(--color-principal)] border-t-4 border-yellow-500">
                     <h3 class="font-bold">Servicios</h3>
                     <p class="text-left">Lo hacemos en el momento, mientras espera.</p>
                     <ul class="text-left">
@@ -78,29 +83,27 @@
             </div>
         </section>
 
-        <section id="horario" class="">
-            <div class="bg-amber-100 border-t-4 border-green-900 border-b-4 border-green-900">
-                <div class="p-6 rounded-xl shadow-md text-black">
-                    <h2 class="">Horario</h2>
-                    <ul class="">
-                        <li class=""><span>Lunes a viernes</span><strong class="">9:30 a 13:30 y 17:00 a 20:00</strong></li>
-                        <li class=""><span>Sábados</span><strong>10:00 a 14:00</strong></li>
-                        <li class=""><span>Domingos</span><strong class="">Cerrado</strong></li>
-                    </ul>
+
+
+
+        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5">
+            
+            <div class="flex justify-between px-5">
+                
+                <div class="text-left">
+                    <p>elobradordenina@gmail.com</p>
+                    <p>675 79 45 05</p>
                 </div>
 
-                <div id="contacto" class="bg-green-900">
-                    <h2 class="">Dónde estamos</h2>
-                    <p class="">Calle del Carmen, 12<br>Barrio de Lavapiés, Madrid</p>
-                    <p class="">915 55 12 12</p>
+        
+                 <div class="text-right">
+                    <p>@ElObradorDeNina_</p>
+                    <p>ElObradorDeNina.com</p>
                 </div>
+
             </div>
-        </section>
+
+        </footer>
+
     </main>
-
-    <footer class="text-stone-500 text-center py-5">
-        <p>La Aguja y el Tornillo · Ferretería y Mercería · Desde 1962</p>
-    </footer>
-
-</body>
-</html>
+       
