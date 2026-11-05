@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+    </style>
      <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
      <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
      
 </head>
 <body class="">
-    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l">
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l dark:bg-neutral-900 dark:text-white">
         <nav class="max-w-5x1  mx-auto px-6 py-1 flex flex-row p-8 justify-between">
             <a href="#" class="">El Obrador de Nina</a>
 
@@ -23,13 +26,11 @@
                 ☰
             </summary>
 
-            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50">
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50 dark:text-white dark:bg-neutral-900">
 
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#inicio">Historia</a></li>
-                    <li><a href="#obrador">Horarios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#contacto">Tartas</a></li>
+                    <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
                 </ul>
 
             </div>
@@ -37,11 +38,13 @@
         </details>
 
         <ul class="hidden md:flex flex-row gap-6">
-            <li><a href="#productos">Historia</a></li>
-            <li><a href="#horario">Horarios</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="#contacto">Tartas</a></li>
+            <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
         </nav>
+        <div class="flex justify-center mb-2">
+            <button id="boton-tema" class="bg-[var(--color-secundario)] text-white px-4 py-2 rounded-lg">Modo oscuro</button>
+
+        </div>
     </header>
 
     <main class="bg-[var(--color-principal)]">
@@ -49,25 +52,25 @@
 
         <section class="bg-[url('media/tarta_decorada.webp')] bg-cover bg-center bg-no-repeat min-h-[400px]"></section>
 
-        <section class="px-6 pt-4 pb-8 bg-[var(--color-secundario)] rounded-t-3xl">
+        <section class="px-6 pt-4 pb-8 bg-[var(--color-secundario)] rounded-t-3xl ">
             <div class="max-w-5xl mx-auto">
 
-                <h1 class="text-4xl">Realiza tu encargo</h1>
-                <h2 class="pt-4">Desde hace 10 años hemos implementado un nuevo servicio en el obrador, la personalización de tartas por encargo.</h2>
-                <h2 class="pt-4">Realizamos tartas con precios base y precios personalizados según las necesidades del cliente.</h2>
-                <h2 class="pt-4">El plazo medio de entrega es de entre 3 y 5 días hábiles, pero puede variar según el encargo o la disponibilidad.</h2>
+                <h1 class="text-4xl md:text-6xl lg:text-8xl mb-8 mt-8">Realiza tu encargo</h1>
+                <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">Desde hace 10 años hemos implementado un nuevo servicio en el obrador, la personalización de tartas por encargo.</h2>
+                <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">Realizamos tartas con precios base y precios personalizados según las necesidades del cliente.</h2>
+                <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">El plazo medio de entrega es de entre 3 y 5 días hábiles, pero puede variar según el encargo o la disponibilidad.</h2>
 
-                <section class="bg-[var(--color-principal)] p-4 rounded-lg mt-[24px] h-56 flex flex-col justify-center items-center text-center">
-                    <h2 class="pt-4 text-[var(--color-secundario)]">Tarta para 8 personas: 30€</h2>
-                    <h2 class="pt-4 text-[var(--color-secundario)]">Tarta para 15 personas: 50€</h2>
-                    <h2 class="pt-4 text-[var(--color-secundario)]">Tarta para 30 personas: 90€</h2>
+                <section class="bg-[var(--color-principal)] p-4 rounded-lg mt-[24px] h-56 flex flex-col justify-center items-center text-center dark:bg-neutral-900 dark:text-white">
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-2xl lg:text-3xl dark:text-white">Tarta para 8 personas: 30€</h2>
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-2xl lg:text-3xl dark:text-white">Tarta para 15 personas: 50€</h2>
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-2xl lg:text-3xl dark:text-white">Tarta para 30 personas: 90€</h2>
                 </section>
         
-                <h2 class="pt-4">Para concretar otro número de personas o tarta diferente, puedes consultarnos y realizaremos un presupuesto personalizado.</h2>
+                <h2 class="pt-4 text-lg md:text-2xl lg:text-3xl">Para concretar otro número de personas o tarta diferente, puedes consultarnos y realizaremos un presupuesto personalizado.</h2>
 
                 <section class="flex flex-col justify-ce4nter items-center text-center">
-                    <h2 class="pt-12">675 79 45 05</h2>
-                <h2 class="pt-4 pb-10">elobradordenina@gmail.com</h2>
+                    <h2 class="pt-12 text-lg md:text-2xl lg:text-3xl">675 79 45 05</h2>
+                <h2 class="pt-4 pb-10 text-lg md:text-2xl lg:text-3xl">elobradordenina@gmail.com</h2>
                 </section>
                 
                
@@ -75,7 +78,7 @@
 
         </section>
 
-        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5">
+        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5 dark:bg-neutral-900 dark:text-white">
             
             <div class="flex justify-between px-5">
                 
@@ -95,4 +98,17 @@
         </footer>
 
     </main>
-       
+    <script src="script.js"></script>
+    <script>
+    const boton = document.getElementById("boton-tema");
+
+    boton.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+
+        if (document.documentElement.classList.contains("dark")) {
+            boton.textContent = "Modo claro";
+        } else {
+        }
+    });
+</script>
+</body>

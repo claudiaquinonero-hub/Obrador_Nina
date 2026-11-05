@@ -22,3 +22,5 @@
         font-family: var(--tipografia-secundaria);
     }
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

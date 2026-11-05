@@ -6,6 +6,12 @@
     <title>El Obrador De Nina</title>
     <link rel="stylesheet" href="style.css">
 
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
      <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
@@ -13,7 +19,7 @@
      
 </head>
 <body class="">
-    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l">
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l dark:bg-neutral-900 dark:text-white">
         <nav class="max-w-5x1  mx-auto px-6 py-1 flex flex-row p-8 justify-between">
             <a href="#" class="">El Obrador de Nina</a>
 
@@ -23,13 +29,11 @@
                 ☰
             </summary>
 
-            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50">
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50 dark:bg-neutral-900 dark:text-white">
 
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#inicio">Historia</a></li>
-                    <li><a href="#obrador">Horarios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="tartas.html">Tartas</a></li>
+                    <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+                    <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
                 </ul>
 
             </div>
@@ -37,11 +41,14 @@
         </details>
 
         <ul class="hidden md:flex flex-row gap-6">
-            <li><a href="#productos">Historia</a></li>
-            <li><a href="#horario">Horarios</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="#contacto">Tartas</a></li>
+            <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+            <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
         </nav>
+
+        <div class="flex justify-center mb-2">
+            <button id="boton-tema" class="bg-[var(--color-secundario)] text-white px-4 py-2 rounded-lg">Modo oscuro</button>
+
+        </div>
     </header>
 
     <main>
@@ -54,25 +61,25 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Tarta de calabaza</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Tarta de calabaza</h2>
                         
                         <img src="MEDIA/tarta_calabaza.jpeg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pestiños</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pestiños</h2>
                         
                         <img src="MEDIA/pestiños.jpg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Torrijas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Torrijas</h2>
                         
                         <img src="MEDIA/torrijas.jpeg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
@@ -94,25 +101,25 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pan</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pan</h2>
                         
                         <img src="MEDIA/pan.jpg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Arquelladas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Arquelladas</h2>
                         
                         <img src="MEDIA/arquellada.jpg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pastas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pastas</h2>
                         
                         <img src="MEDIA/pastas.webp" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
@@ -131,25 +138,25 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Trufas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Trufas</h2>
                         
                         <img src="MEDIA/trufas.jpg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Palmeras</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Palmeras</h2>
                         
                         <img src="MEDIA/palmeras.jpeg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Croissants</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Croissants</h2>
                         
                         <img src="MEDIA/croissant.jpeg" class="w-full aspect-square object-cover rounded-3xl">
                     </article>
@@ -161,7 +168,7 @@
             
 
 
-        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5">
+        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5 dark:bg-neutral-900 dark:text-white">
             
             <div class="flex justify-between px-5">
                 
@@ -181,4 +188,17 @@
         </footer>
 
     </main>
-       
+    <script src="script.js"></script>
+    <script>
+    const boton = document.getElementById("boton-tema");
+
+    boton.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+
+        if (document.documentElement.classList.contains("dark")) {
+            boton.textContent = "Modo claro";
+        } else {
+        }
+    });
+</script>
+</body>
