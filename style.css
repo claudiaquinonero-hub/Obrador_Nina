@@ -1,0 +1,24 @@
+@layer theme, base, components, utilities;
+
+:root {
+  --color-principal:rgb(231, 218, 158);
+  --color-secundario:rgb(92, 55, 10); 
+  --tipografia-principal:"Instrument-serif", sans-serif;
+  --tipografia-secundaria:"instrument-sans-variable", sans-serif;
+}
+
+@layer base {
+    h1 {
+        color: var(--color-principal);
+        font-size: 7rem;
+        font-family: var(--tipografia-principal);
+    }
+}
+
+@layer base {
+    h2 {
+        color: var(--color-principal);
+        font-size: 2rem;
+        font-family: var(--tipografia-secundaria);
+    }
+}
