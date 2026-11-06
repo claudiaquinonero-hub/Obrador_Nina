@@ -21,11 +21,19 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body class="bg-[var(--color-principal)] text-[var(--color-secundario)] dark:bg-neutral-900 dark:text-white">
-    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-l  md:text-2xl lg:text-3xl dark:bg-neutral-900 dark:text-white">
-        <nav class="max-w-5x1  mx-auto px-6 py-1 flex flex-row p-8 justify-between mt-9">
-            <a href="#" class="">El Obrador de Nina</a>
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-lg md:text-2xl lg:text-3xl dark:bg-neutral-900 dark:text-white">
 
-            <details class="relative md:hidden">
+    <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-row items-center justify-between gap-3">
+
+        <a href="index.html" class="shrink-0">
+            El Obrador de Nina
+        </a>
+
+        <button id="boton-tema" class="bg-[var(--color-secundario)] text-white text-sm md:text-base px-3 py-2 rounded-lg shrink-0">
+            Modo oscuro
+        </button>
+
+        <details class="relative md:hidden shrink-0">
 
             <summary class="list-none cursor-pointer text-3xl">
                 ☰
@@ -35,56 +43,82 @@
 
                 <ul class="flex flex-col gap-4">
                     <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
-                    <li><a href="productos.html"class="hover:text-red-500 focus:text-red-500">Productos</a></li>
+                    <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
                     <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
                 </ul>
 
             </div>
-
         </details>
 
-        <ul class="hidden md:flex flex-row gap-6">
+        <ul class="hidden md:flex flex-row gap-4 lg:gap-6 shrink-0">
             <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
             <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
             <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
         </ul>
-        </nav>
-        <div class="flex justify-center mb-2">
-            <button id="boton-tema" class="bg-[var(--color-secundario)] text-white px-4 py-2 rounded-lg">Modo oscuro</button>
 
-        </div>
+        </nav>
 
     </header>
 
     <main>
-        <section class="bg-[url('media/Portada.jpg')] bg-cover bg-center bg-no-repeat min-h-[400px]">
-            <div class="max-w-5x1  mx-auto text-center pt-5">
-                <h1 data-aos="fade-up" class="text-4xl md:text-7xl">Descubre nuestras novedades</h1>
-                <div class="mt-17 block w-fit mx-auto rounded-3xl border-2 border-[var(--color-secundario)] bg-[var(--color-principal)] px-6 py-8 text-[var(--color-secundario)]">
-                    
-                <p class="font-[family-name:var(--tipografia-principal)] text-xl md:text-2xl lg:text-3xl">Disponibles por tiempo limitado</p>
-                <p class="font-[family-name:var(--tipografia-principal)] text-xl ">Hasta el 10 de diciembre</p>
+    <section class="bg-[url('media/Portada.jpg')] bg-cover bg-center bg-no-repeat min-h-[400px] md:min-h-[600px] lg:min-h-[750px]">
+
+        <div class="max-w-5xl mx-auto text-center pt-5 md:pt-10 lg:pt-14">
+
+            <h1 data-aos="fade-up" class="text-4xl md:text-7xl lg:text-8xl">
+                Descubre nuestras novedades
+            </h1>
+
+            <div class="mt-10 md:mt-16 lg:mt-20 block w-fit mx-auto rounded-3xl border-2 border-[var(--color-secundario)] bg-[var(--color-principal)] px-6 py-8 md:px-10 md:py-10 lg:px-14 lg:py-12 text-[var(--color-secundario)]">
+
+                <p class="font-[family-name:var(--tipografia-principal)] text-xl md:text-3xl lg:text-4xl">
+                    Disponibles por tiempo limitado
+                </p>
+
+                <p class="font-[family-name:var(--tipografia-principal)] text-xl md:text-2xl lg:text-3xl">
+                    Hasta el 10 de diciembre
+                </p>
+
             </div>
-                <a href="productos.html" class="botoncito inline-block mt-15 px-5 py-2 bg-[var(--color-secundario)] text-[var(--color-principal)] font-[family-name:var(--tipografia-principal)] text-sm rounded-full font-bold hover:bg-red-900 md:text-2xl lg:text-3xl mb-8">Descubrir</a>
-            </div>
-        </section>
+
+            <a href="productos.html"
+               class="botoncito inline-block mt-10 md:mt-16 lg:mt-20 px-5 py-2 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-[var(--color-secundario)] text-[var(--color-principal)] font-[family-name:var(--tipografia-principal)] text-sm md:text-2xl lg:text-3xl rounded-full font-bold hover:bg-red-900 transition-colors duration-300 mb-8">
+                Descubrir
+            </a>
+
+        </div>
+    </section>
+</main>
 
 
         <section class="bg-[var(--color-secundario)] p-4 md:p-8 lg:p-12">
 
-            <div class="flex flex-row gap-3 md:gap-6 lg:gap-10">
-                <div class="flex flex-col gap-4 w-2/5">
-                <img src="MEDIA/obrador1.jpg" class="w-full h-auto">
-            <img src="MEDIA/obrador2.jpg" class="w-full h-auto">
-            </div>
+    <div class="flex flex-row md:flex-col gap-3 md:gap-6 lg:gap-10">
 
-            <div class="flex-1 text-white">
-                <h1 data-aos="fade-up" class="text-4xl md:text-6xl lg:text-8xl mb-4 mt-4">Nuestra Historia</h1>
-            <h2 class="text-xs md:text-2xl lg:text-3xl">En 1953, Nina decidió abrir un obrador con 20 años en el local de debajo de su casa. Era conocida por todos sus vecinos por hacerles dulces y pan los findes de semana, así que con la ayuda de sus hermanos logró abrir su propio local.</h2>
-            <h2 class="text-xs md:text-2xl lg:text-3xl mt-5">Actualmente, somos sus nietos los que llevamos el obrador y nuestra abuela Nina sigue disfrutando de ver las caras de felicidad de los vecinos al comprar un dulce. Además, nos hemos modernizado un poco, incluyendo nuevos servicios y productos innovadores.</h2>
-            </div>
-            </div>
-        </section>
+        <div class="flex-1 text-white">
+            <h1 data-aos="fade-up" class="text-4xl md:text-6xl lg:text-8xl mb-4 mt-4">
+                Nuestra Historia
+            </h1>
+
+            <h2 class="text-xs md:text-2xl lg:text-3xl">
+                En 1953, Nina decidió abrir un obrador con 20 años en el local de debajo de su casa. Era conocida por todos sus vecinos por hacerles dulces y pan los fines de semana, así que con la ayuda de sus hermanos logró abrir su propio local.
+            </h2>
+
+            <h2 class="text-xs md:text-2xl lg:text-3xl mt-5">
+                Actualmente, somos sus nietos los que llevamos el obrador y nuestra abuela Nina sigue disfrutando de ver las caras de felicidad de los vecinos al comprar un dulce. Además, nos hemos modernizado un poco, incluyendo nuevos servicios y productos innovadores.
+            </h2>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-15 md:gap-30 w-2/5 md:w-4/5 mx-auto justify-center">
+            
+            <img src="MEDIA/obrador1.jpg" class="w-full md:w-1/2 h-auto object-cover">
+            
+            <img src="MEDIA/obrador2.jpg" class="w-full md:w-1/2 h-auto object-cover">
+        </div>
+
+    </div>
+
+</section>
 
         <section class="bg-[var(--color-principal)] p-4 dark:bg-neutral-900">
             <h2 class="text-xs md:text-2xl lg:text-3xl mt-5 text-[var(--color-secundario)] dark:text-white">Calle Fernando Otero, 7, 28713, San Sebastián de los Reyes, Madrid</h2>
@@ -95,20 +129,18 @@
         <section class="bg-[var(--color-secundario)] py-8">
             
             <div class="flex justify-center items-center gap-8">
-
-   
-    <a href="productos.html"
-       class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
-        <img src="MEDIA/pan.jpg"
-             class="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover">
-    </a>
-
-
-    <a href="tartas.html"
-       class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
-        <img src="MEDIA/tarta.webp"
-             class="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover">
-    </a>
+                
+                
+                <a href="productos.html" class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
+                    
+                    <img src="MEDIA/pan.jpg" class="w-36 h-36 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover">
+                </a>
+                
+                
+                <a href="tartas.html" class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
+                    
+                    <img src="MEDIA/tarta.webp" class="w-36 h-36 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover">
+                </a>
 
         </section>
 
