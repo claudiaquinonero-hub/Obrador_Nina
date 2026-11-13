@@ -2,7 +2,7 @@
 
 
 @layer base {
-    .dark{
+    html.dark{
         --color-principal:rgb(52, 35, 14);
         --color-secundario:rgb(186, 232, 227);
         color-scheme: dark;
