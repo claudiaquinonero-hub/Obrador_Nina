@@ -12,9 +12,20 @@
 
     <style type="text/tailwindcss">
     @custom-variant dark (&:where(.dark, .dark *));
+
+    @theme static{
+        --color-principal:rgb(186, 232, 227);
+        --color-secundario:rgb(52, 35, 14);
+        --tipografia-principal:"source-serif-pro", serif;
+        --tipografia-secundaria:"ibm-plex-mono", sans-serif;
+    }
     </style>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
 
      <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
      <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
@@ -22,7 +33,7 @@
 </head>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body class="">
-    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-lg md:text-2xl lg:text-3xl dark:bg-neutral-900 dark:text-white">
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-lg md:text-2xl lg:text-3xl">
 
     <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-row items-center justify-between gap-3">
 
@@ -40,7 +51,7 @@
                 ☰
             </summary>
 
-            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50 dark:bg-neutral-900 dark:text-white">
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50">
 
                 <ul class="flex flex-col gap-4">
                     <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
@@ -66,29 +77,29 @@
         <section id="productos" class="px-6 py-20 bg-[var(--color-secundario)]">
             <div class="max-w-5xl mx-auto">
 
-                <h1 data-aos="fade-up" class="text-5xl text-center font-bold mb-10">Novedades <span class="text-sm">POR TIEMPO LIMITADO</span></h1>
+                <h1 data-aos="fade-up" class="text-5xl text-center font-bold mb-10">Novedades <br class="block md:hidden"><span class="text-sm">POR TIEMPO LIMITADO</span></h1>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Tarta de calabaza</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Tarta de calabaza</h2>
                         
                         <img src="MEDIA/tarta_calabaza.jpeg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pestiños</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pestiños</h2>
                         
                         <img src="MEDIA/pestiños.jpg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Torrijas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Torrijas</h2>
                         
                         <img src="MEDIA/torrijas.jpeg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
@@ -106,29 +117,29 @@
 
             <div class="max-w-5xl mx-auto">
 
-                <h1 class="text-5xl text-center font-bold mb-10">Nuestros productos <span class="text-sm">DE SDIEMPRE</span></h1>
+                <h1 class="text-5xl text-center font-bold mb-10">Nuestros productos <br class="block md:hidden"><span class="text-sm">DE SIEMPRE</span></h1>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pan</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pan</h2>
                         
                         <img src="MEDIA/pan.jpg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Arquelladas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Arquelladas</h2>
                         
                         <img src="MEDIA/arquellada.jpg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Pastas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Pastas</h2>
                         
                         <img src="MEDIA/pastas.webp" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
@@ -147,25 +158,25 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Trufas</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Trufas</h2>
                         
                         <img src="MEDIA/trufas.jpg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Palmeras</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Palmeras</h2>
                         
                         <img src="MEDIA/palmeras.jpeg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
                     
                     
-                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md border-t-4 border-orange-500 bg-[var(--color-principal)] text-center flex flex-col dark:bg-neutral-900 dark:text-white">
+                    <article class="w-full min-w-0 p-6 rounded-xl shadow-md bg-[var(--color-principal)] text-center flex flex-col">
                         
-                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4 dark:text-white">Croissants</h2>
+                        <h2 class="font-bold text-[var(--color-secundario)] text-2xl mb-4">Croissants</h2>
                         
                         <img src="MEDIA/croissant.jpeg" class="w-full aspect-square object-cover rounded-3xl animacion-imagen">
                     </article>
@@ -178,19 +189,37 @@
 
 
         
-            <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-sm py-5 dark:bg-neutral-900 dark:text-white">
+            <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] text-xxs py-5">
             
-            <div class="flex justify-between px-5">
-                
-                <div class="text-left text-xs d:text-2xl lg:text-3xl">
-                    <p>elobradordenina@gmail.com</p>
-                    <p>675 79 45 05</p>
+            <div class="md:flex md:justify-between px-5 flex-row">
+
+
+                <div class="text-left text-xs md:text-2xl lg:text-3xl">
+                    <img src="MEDIA/E.O.N..svg" class="pb-6 w-40 h-auto md:w-60 md:h-auto">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Horarios</h1>
+                    <p class="text-sm md:text-xl mt-4">L-V: 10h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Sábado: 10:30h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Domingo: 10:30h a 15h</p>
+                </div>
+
+
+                <div class="text-left text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Contactanos</h1>
+                    <p class="text-sm md:text-xl mt-4">El Obrador De Nina</p>
+                    <p class="text-sm md:text-xl mt-2">C/España, 4, Madrid</p>
+                    <p class="text-sm md:text-xl mt-2">C/Rami, 12, Alcobendas</p>
+                    <p class="text-sm md:text-xl mt-2">C/Flora, 9, Ss de los Reyes</p>
+                    <p class="text-sm md:text-xl mt-2">679 68 53 06</p>
+                    <p class="text-sm md:text-xl mt-2">elobradordenina@gmail.com</p>
                 </div>
 
         
-                 <div class="text-right text-xs d:text-2xl lg:text-3xl">
-                    <p>@ElObradorDeNina_</p>
-                    <p>ElObradorDeNina.com</p>
+                 <div class="text-left md:text-right text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Información</h1>
+                    <p class="text-sm md:text-xl mt-4">Historia</p>
+                    <p class="text-sm md:text-xl mt-2">Aviso legal</p>
+                    <p class="text-sm md:text-xl mt-2">Protección de datos</p>
+                    <p class="text-sm md:text-xl mt-2">Política de cookies</p>
                 </div>
 
             </div>
@@ -198,26 +227,10 @@
         </footer>
 
     </main>
-    <script src="script.js"></script>
-    <script>
-    const boton = document.getElementById("boton-tema");
-
-    boton.addEventListener("click", function () {
-        document.documentElement.classList.toggle("dark");
-
-        if (document.documentElement.classList.contains("dark")) {
-            boton.textContent = "Modo claro";
-        } else {
-        }
-    });
-</script>
+    
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
+
 </body>

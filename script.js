@@ -1,3 +1,10 @@
+
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+
 const boton = document.getElementById("boton-tema");
 
 boton.addEventListener("click", function () {

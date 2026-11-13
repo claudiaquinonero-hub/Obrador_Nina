@@ -1,29 +1,23 @@
 @layer theme, base, components, utilities;
 
-:root {
-  --color-principal:rgb(186, 232, 227);
-  --color-secundario:rgb(52, 35, 14); 
-  --tipografia-principal:"source-serif-pro", serif;
-  --tipografia-secundaria:"ibm-plex-mono", sans-serif;
-}
 
 @layer base {
+    .dark{
+        --color-principal:rgb(52, 35, 14);
+        --color-secundario:rgb(186, 232, 227);
+        color-scheme: dark;
+    }
     h1 {
         color: var(--color-principal);
         font-size: 7rem;
         font-family: var(--tipografia-principal);
     }
-}
-
-@layer base {
     h2 {
         color: var(--color-principal);
         font-size: 2rem;
         font-family: var(--tipografia-secundaria);
     }
 }
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 
 @keyframes aparecer {
