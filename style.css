@@ -1,9 +1,9 @@
 @layer theme, base, components, utilities;
 
 :root {
-  --color-principal:rgb(231, 218, 158);
-  --color-secundario:rgb(92, 55, 10); 
-  --tipografia-principal:"Instrument-serif", sans-serif;
+  --color-principal:rgb(186, 232, 227);
+  --color-secundario:rgb(52, 35, 14); 
+  --tipografia-principal:"source-serif-pro", serif;
   --tipografia-secundaria:"instrument-sans-variable", sans-serif;
 }
 
