@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Obrador De Nina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="MEDIA/favicon.jpg">
+
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+
+    @theme static{
+        --color-principal:rgb(186, 232, 227);
+        --color-secundario:rgb(52, 35, 14);
+        --tipografia-principal:"source-serif-pro", serif;
+        --tipografia-secundaria:"ibm-plex-mono", sans-serif;
+    }
+    </style>
+
+     <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
+     <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
+     
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<body class="">
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-lg md:text-2xl lg:text-3xl">
+
+    <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-row items-center justify-between gap-3">
+
+        <a href="index.html" class="shrink-0">
+            El Obrador de Nina
+        </a>
+
+        <button id="boton-tema" class="bg-[var(--color-secundario)] text-white text-sm md:text-base px-3 py-2 rounded-lg shrink-0">
+            Modo oscuro
+        </button>
+
+        <details class="relative md:hidden shrink-0">
+
+            <summary class="list-none cursor-pointer text-3xl">
+                ☰
+            </summary>
+
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50 dark:bg-neutral-900">
+
+                <ul class="flex flex-col gap-4">
+                    <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
+                    <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
+                </ul>
+
+            </div>
+        </details>
+
+        <ul class="hidden md:flex flex-row gap-4 lg:gap-6 shrink-0">
+            <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
+            <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
+        </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="bg-[var(--color-principal)]">
+
+
+        <section class="bg-[url('media/tarta_decorada.webp')] bg-cover bg-center bg-no-repeat min-h-[400px]"></section>
+
+        <section class="px-6 pt-4 pb-8 bg-[var(--color-secundario)] rounded-t-3xl ">
+            <div class="max-w-5xl mx-auto">
+
+                <h1 data-aos="fade-up" class="text-4xl mb:text-8xl mb-8 mt-8">Realiza tu encargo</h1>
+                <h2 class="pt-4 text-lg md:text-xl lg:text-xl">Desde hace 10 años hemos implementado un nuevo servicio en el obrador, la personalización de tartas por encargo.</h2>
+                <h2 class="pt-4 text-lg md:text-xl lg:text-xl">Realizamos tartas con precios base y precios personalizados según las necesidades del cliente.</h2>
+                <h2 class="pt-4 text-lg md:text-xl lg:text-xl">El plazo medio de entrega es de entre 3 y 5 días hábiles, pero puede variar según el encargo o la disponibilidad.</h2>
+
+                <section class="bg-[var(--color-principal)] p-4 rounded-lg mt-[24px] h-56 flex flex-col justify-center items-center text-center">
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-xl lg:text-xl">Tarta para 8 personas: 30€</h2>
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-xl lg:text-xl">Tarta para 15 personas: 50€</h2>
+                    <h2 class="pt-4 text-[var(--color-secundario)] text-lg md:text-xl lg:text-xl">Tarta para 30 personas: 90€</h2>
+                </section>
+        
+                <h2 class="pt-4 text-lg md:text-xl lg:text-xl">Para concretar otro número de personas o tarta diferente, puedes consultarnos y realizaremos un presupuesto personalizado.</h2>
+
+
+                <section id="newsletter" class="mt-16">
+                    <div>
+                        <h2 class="text-[var(--color-principal)] text-bold text-2xl md:text-4xl font-[family-name:var(--tipografia-principal)]">Diseña tu tarta</h2>
+                        <p class="text-[var(--color-principal)] text-xl md:4xl font-[family-name:var(--tipografia-secundaria)]">Escribenos tu propuesta y nosotros hacemos el resto</p>
+                    </div>
+                    <form class="flex flex-col gap-7">
+                        <label for="correo"></label>
+                        <input type="email" id="correo" class="text-[var(--color-principal)] text-xl border-1 rounded-lg p-4 font-[family-name:var(--tipografia-secundaria)]" placeholder="E-mail"></input>
+                        <textarea placeholder="Idea De Diseño" rows="10" required class="text-[var(--color-principal)] text-xl border-1 rounded-lg p-4 font-[family-name:var(--tipografia-secundaria)]"></textarea>
+                        <input type="submit" value="Enviar" class="text-[var(--color-secundario)] text-xl bg-principal rounded-lg p-4 hover:bg-principal/75 hover:text-secundario cursor-pointer font-[family-name:var(--tipografia-secundaria)]"></input>
+                    </form>
+                </section>
+
+            </div>
+
+        </section>
+
+        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] text-xxs py-5">
+            
+            <div class="md:flex md:justify-between px-5 flex-row">
+
+
+                <div class="text-left text-xs md:text-2xl lg:text-3xl">
+                    <img src="MEDIA/E.O.N..svg" class="pb-6 w-40 h-auto md:w-60 md:h-auto">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Horarios</h1>
+                    <p class="text-sm md:text-xl mt-4">L-V: 10h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Sábado: 10:30h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Domingo: 10:30h a 15h</p>
+                </div>
+
+
+                <div class="text-left text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Contactanos</h1>
+                    <p class="text-sm md:text-xl mt-4">El Obrador De Nina</p>
+                    <p class="text-sm md:text-xl mt-2">C/España, 4, Madrid</p>
+                    <p class="text-sm md:text-xl mt-2">C/Rami, 12, Alcobendas</p>
+                    <p class="text-sm md:text-xl mt-2">C/Flora, 9, Ss de los Reyes</p>
+                    <p class="text-sm md:text-xl mt-2">679 68 53 06</p>
+                    <p class="text-sm md:text-xl mt-2">elobradordenina@gmail.com</p>
+                </div>
+
+        
+                 <div class="text-left md:text-right text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Información</h1>
+                    <p class="text-sm md:text-xl mt-4">Historia</p>
+                    <p class="text-sm md:text-xl mt-2">Aviso legal</p>
+                    <p class="text-sm md:text-xl mt-2">Protección de datos</p>
+                    <p class="text-sm md:text-xl mt-2">Política de cookies</p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+    
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>

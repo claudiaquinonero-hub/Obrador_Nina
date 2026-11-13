@@ -1,0 +1,36 @@
+@layer theme, base, components, utilities;
+
+
+@layer base {
+    .dark{
+        --color-principal:rgb(52, 35, 14);
+        --color-secundario:rgb(186, 232, 227);
+        color-scheme: dark;
+    }
+    h1 {
+        color: var(--color-principal);
+        font-size: 7rem;
+        font-family: var(--tipografia-principal);
+    }
+    h2 {
+        color: var(--color-principal);
+        font-size: 2rem;
+        font-family: var(--tipografia-secundaria);
+    }
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animacion-imagen {
+    animation: aparecer 1s ease-out;
+}

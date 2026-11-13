@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Obrador De Nina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+
+    @theme static{
+        --color-principal:rgb(186, 232, 227);
+        --color-secundario:rgb(52, 35, 14);
+        --tipografia-principal:"source-serif-pro", serif;
+        --tipografia-secundaria:"ibm-plex-mono", sans-serif;
+    }
+    </style>
+
+     <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
+     <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
+
+     <link rel="stylesheet" href="https://use.typekit.net/sqy0bqj.css">
+     <link rel="stylesheet" href="https://use.typekit.net/xng5yfg.css">
+
+     <link rel="icon" href="MEDIA/favicon.jpg">
+     
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<body class="bg-[var(--color-principal)] text-[var(--color-secundario)]">
+    <header class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-lg md:text-2xl lg:text-3xl">
+
+    <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-row items-center justify-between gap-3">
+
+        <a href="index.html" class="shrink-0">
+            El Obrador de Nina
+        </a>
+
+        <button id="boton-tema" class="bg-[var(--color-secundario)] text-white text-sm md:text-base px-3 py-2 rounded-lg shrink-0">
+            Modo oscuro
+        </button>
+
+        <details class="relative md:hidden shrink-0">
+
+            <summary class="list-none cursor-pointer text-3xl">
+                ☰
+            </summary>
+
+            <div class="absolute right-0 top-full mt-3 w-48 bg-[var(--color-principal)] shadow-lg rounded-lg p-4 z-50">
+
+                <ul class="flex flex-col gap-4">
+                    <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
+                    <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
+                </ul>
+
+            </div>
+        </details>
+
+        <ul class="hidden md:flex flex-row gap-4 lg:gap-6 shrink-0">
+            <li><a href="index.html" class="hover:text-red-500 focus:text-red-500">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-red-500 focus:text-red-500">Productos</a></li>
+            <li><a href="tartas.html" class="hover:text-red-500 focus:text-red-500">Tartas</a></li>
+        </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+    <section class="bg-[url('media/fondo.png')] bg-cover bg-center bg-no-repeat min-h-[400px] md:min-h-[600px] lg:min-h-[750px]">
+
+        <div class="max-w-5xl mx-auto text-center pt-36 md:pt-65 lg:pt-70">
+
+            <h1 data-aos="fade-up" class="text-5xl md:text-7xl lg:text-8xl"> DESCUBRE<br>NUESTRAS<br>NOVEDADES</h1>
+
+            <a href="productos.html"
+               class="botoncito inline-block mt-4 md:mt-8 lg:mt-8 px-4 py-1.5 md:px-6 md:py-2 lg:px-8 lg:py-2.5 bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-principal)] text-xs md:text-sm lg:text-xl rounded-full font-bold hover:bg-red-900 transition-colors duration-300 mb-8">
+                Descubrir
+            </a>
+
+        </div>
+    </section>
+</main>
+
+
+        <section class="bg-[var(--color-secundario)] p-4 md:p-8 lg:p-16">
+            <div class="max-w-7xl mx-auto flex flex-row md:flex-col lg:flex-row items-stretch md:items-center lg:items-center gap-4 md:gap-8 lg:gap-12">
+
+            <div class="w-2/5 md:w-3/5 lg:w-1/4 md:mx-auto lg:mx-0">
+                <img src="MEDIA/obrador2.jpg"
+                class="w-full h-full md:h-auto object-cover rounded-lg">
+            </div>
+
+             <div class="flex-1 min-w-0 text-white md:text-center lg:text-left">
+
+                <h1 data-aos="fade-up" class="text-2xl md:text-5xl lg:text-6xl mb-4">Nuestra Historia</h1>
+
+                <p class="text-xs md:text-xl lg:text-2xl leading-relaxed text-[var(--color-principal)] font-[family-name:var(--tipografia-secundaria)]">En 1953, Nina decidió abrir un obrador con 20 años en el local de debajo de su casa. Era conocida por todos sus vecinos por hacerles dulces y pan los fines de semana, así que con la ayuda de sus hermanos logró abrir su propio local.</p>
+
+                <p class="text-xs md:text-xl lg:text-2xl leading-relaxed mt-5 text-[var(--color-principal)] font-[family-name:var(--tipografia-secundaria)]">Actualmente, somos sus nietos los que llevamos el obrador y nuestra abuela Nina sigue disfrutando de ver las caras de felicidad de los vecinos al comprar un dulce. Además, nos hemos modernizado un poco, incluyendo nuevos servicios y productos innovadores.</p>
+             </div>
+
+  </div>
+</section>
+
+
+<section class="bg-[var(--color-principal)] p-6 md:p-12">
+
+  <div class="flex flex-col md:flex-row gap-10 md:gap-16">
+
+
+    <div class="md:w-1/2">
+      <h1 class="text-5xl md:text-7xl font-bold text-[var(--color-secundario)]">NUESTRAS TIENDAS</h1>
+    </div>
+
+
+    <div class="md:w-1/2 border-l-2 border-[var(--color-secundario)]">
+
+      <div class="flex gap-4 mb-12">
+        <div class="w-4 h-4 rounded-full bg-[var(--color-secundario)] -ml-2 mt-2"></div>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold text-[var(--color-secundario)]">Nuevos Ministerios</h1>
+          <h1 class="text-lg font-bold text-[var(--color-secundario)] mt-4">Horarios</h1>
+          <p class="mt-2 text-xs md:text-sm text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] font-bold">
+            <span>L-V:</span> 10h a 14h y 17h a 21h<br>
+            <span>Sábado:</span> 10.30h a 14h y 17h a 21h<br>
+            <span>Domingo:</span> 10.30h a 15h
+          </p>
+        </div>
+      </div>
+
+
+      <div class="flex gap-4 mb-12">
+        <div class="w-4 h-4 rounded-full bg-[var(--color-secundario)] -ml-2 mt-2"></div>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold text-[var(--color-secundario)]">San Sebastián de los Reyes</h1>
+          <h1 class="text-lg font-bold text-[var(--color-secundario)] mt-4e">Horarios</h1>
+          <p class="mt-2 text-xs md:text-sm text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] font-bold">
+            <span>L-V:</span> 10h a 14h y 17h a 21h<br>
+            <span>Sábado:</span> 10.30h a 14h y 17h a 21h<br>
+            <span>Domingo:</span> 10.30h a 15h
+          </p>
+        </div>
+      </div>
+
+  
+      <div class="flex gap-4">
+        <div class="w-4 h-4 rounded-full bg-[var(--color-secundario)] -ml-2 mt-2"></div>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold text-[var(--color-secundario)]">Alcobendas</h1>
+          <h1 class="text-lg font-bold text-[var(--color-secundario)] mt-4">Horarios</h1>
+          <p class="mt-2 text-xs md:text-sm text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] font-bold">
+            <span>L-V:</span> 10h a 14h y 17h a 21h<br>
+            <span>Sábado:</span> 10.30h a 14h y 17h a 21h<br>
+            <span>Domingo:</span> 10.30h a 15h
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        
+
+        <section class="bg-[var(--color-secundario)] py-8">
+            
+            <div class="flex justify-around items-center gap-8  flex-wrap flex-col sm:flex-row md:my-9">
+                
+                <div class="flex flex-right md:flex md:flex-col md:justify-content md:center md:gap-0 gap-10 md:my-9 ">
+                    <div class="flex flex-right md:flex md:flex-col md:justify-content md:center md:gap-0 gap-10 items-center">
+                        <a href="productos.html" class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
+                            <img src="MEDIA/tarta_calabaza.jpeg" class="w-32 h-32 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover">
+                    </a>
+                    <h1 class="text-center justify-content md:mt-9 md:text-3xl text-2xl">Novedades</h1>
+                    </div>
+                </div>
+
+                
+                <div class="text-center justify-content">
+                    <div class="flex flex-right md:flex md:flex-col md:justify-content md:center md:gap-0 gap-10 md:my-9 items-center">
+                        <a href="productos.html" class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
+                            <img src="MEDIA/pan.jpg" class="w-32 h-32 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover">
+                        </a>
+                        <h1 class="text-center justify-content md:mt-9 md:text-3xl text-2xl order-first md:order-2">Productos</h1>
+                    </div>
+                </div>
+
+                <div class="text-center justify-content">
+                    <div class="flex flex-right md:flex md:flex-col md:justify-content md:center md:gap-0 gap-10 md:my-9 items-center">
+                        <a href="tartas.html" class="rounded-full border-2 border-[var(--color-principal)] p-2 hover:bg-red-900 transition-colors duration-300">
+                            <img src="MEDIA/tarta.webp" class="w-32 h-32 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover">
+                        </a>
+                        <h1 class="text-center justify-content md:mt-9 md:text-3xl text-2xl">Tartas</h1>
+                    </div>
+
+                </div>
+    
+
+
+                
+            </div>
+        </section>
+
+        <footer class="bg-[var(--color-principal)] text-[var(--color-secundario)] font-[family-name:var(--tipografia-secundaria)] text-xxs py-5">
+            
+            <div class="md:flex md:justify-between px-5 flex-row">
+
+
+                <div class="text-left text-xs md:text-2xl lg:text-3xl">
+                    <img src="MEDIA/E.O.N..svg" class="pb-6 w-40 h-auto md:w-60 md:h-auto">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Horarios</h1>
+                    <p class="text-sm md:text-xl mt-4">L-V: 10h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Sábado: 10:30h a 14h y 17h a 21h</p>
+                    <p class="text-sm md:text-xl mt-2">Domingo: 10:30h a 15h</p>
+                </div>
+
+
+                <div class="text-left text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Contactanos</h1>
+                    <p class="text-sm md:text-xl mt-4">El Obrador De Nina</p>
+                    <p class="text-sm md:text-xl mt-2">C/España, 4, Madrid</p>
+                    <p class="text-sm md:text-xl mt-2">C/Rami, 12, Alcobendas</p>
+                    <p class="text-sm md:text-xl mt-2">C/Flora, 9, Ss de los Reyes</p>
+                    <p class="text-sm md:text-xl mt-2">679 68 53 06</p>
+                    <p class="text-sm md:text-xl mt-2">elobradordenina@gmail.com</p>
+                </div>
+
+        
+                 <div class="text-left md:text-right text-xs d:text-2xl lg:text-3xl ">
+                    <h1 class="text-[var(--color-secundario)] text-2xl mt-4 md-0">Información</h1>
+                    <p class="text-sm md:text-xl mt-4">Historia</p>
+                    <p class="text-sm md:text-xl mt-2">Aviso legal</p>
+                    <p class="text-sm md:text-xl mt-2">Protección de datos</p>
+                    <p class="text-sm md:text-xl mt-2">Política de cookies</p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="script.js"></script>
+
+</body>    
