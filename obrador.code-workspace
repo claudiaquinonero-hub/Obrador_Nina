@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ejercicio-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "obrador"
+	}
+}

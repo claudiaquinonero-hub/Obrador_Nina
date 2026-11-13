@@ -1,5 +1,11 @@
 @layer theme, base, components, utilities;
 
+:root{
+    --color-principal:rgb(186, 232, 227);
+    --color-secundario:rgb(52, 35, 14);
+    --tipografia-principal:"source-serif-pro", serif;
+    --tipografia-secundaria:"ibm-plex-mono", sans-serif;
+}
 
 @layer base {
     .dark{
